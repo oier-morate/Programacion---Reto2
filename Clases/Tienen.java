@@ -1,10 +1,10 @@
-public class Tienen {
+public class Tiene {
     private GenerosDeLibro codGenero;
-    private Libros codLibro;
+    private Libro codLibro;
 
-    public Tienen(){}
+    public Tiene(){}
 
-    public Tienen(GenerosDeLibro codGenero, Libros codLibro)
+    public Tiene(GenerosDeLibro codGenero, Libro codLibro)
     {
         this.codGenero = codGenero;
         this.codLibro = codLibro;
@@ -20,12 +20,12 @@ public class Tienen {
         this.codGenero = codGenero;
     }
 
-    public Libros getCodLibro()
+    public Libro getCodLibro()
     {
         return this.codLibro;
     }
 
-    public void setCodLibro(Libros codLibro)
+    public void setCodLibro(Libro codLibro)
     {
         this.codLibro = codLibro;
     }
