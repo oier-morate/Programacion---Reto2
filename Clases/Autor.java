@@ -4,9 +4,9 @@ public class Autor {
     private String nombre;
     private String apellidos;
     
-    public Autores() {}
+    public Autor() {}
 
-    public Autores(int codAutor, String dniAutor, String nombre, String apellidos)
+    public Autor(int codAutor, String dniAutor, String nombre, String apellidos)
     {
         this.codAutor = codAutor;
         this.dniAutor = dniAutor;
