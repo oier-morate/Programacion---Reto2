@@ -1,13 +1,13 @@
-public class Rentan {
-    private Ejemplares codEjemplar;
+public class Renta {
+    private Ejemplar codEjemplar;
     private Socios dniSocio;
     private String fechaDevolucion;
     private String fechaRenta;
     private int maxRenta;
 
-    public Rentan(){}
+    public Renta(){}
 
-    public Rentan(Ejemplares codEjemplar, Socios dniSocio, String fechaDevolucion,
+    public Renta(Ejemplar codEjemplar, Socios dniSocio, String fechaDevolucion,
         String fechaRenta, int maxRenta)
         {
             this.codEjemplar = codEjemplar;
@@ -17,12 +17,12 @@ public class Rentan {
             this.maxRenta = maxRenta;
         }
     
-    public Ejemplares getCodEjemplar()
+    public Ejemplar getCodEjemplar()
     {
         return this.codEjemplar;
     }
 
-    public void setCodEjemplar(Ejemplares codEjemplar)
+    public void setCodEjemplar(Ejemplar codEjemplar)
     {
         this.codEjemplar = codEjemplar;
     }
