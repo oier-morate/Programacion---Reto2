@@ -1,11 +1,11 @@
-public class TipoDePenalizaciones {
+public class TipoDePenalizacion {
     private int codPenalizacion;
     private String motivo;
     private int numeroDiasPenalizado;
 
-    public TipoDePenalizaciones(){}
+    public TipoDePenalizacion(){}
 
-    public TipoDePenalizaciones(int codPenalizacion, String motivo, int numeroDiasPenalizado)
+    public TipoDePenalizacion(int codPenalizacion, String motivo, int numeroDiasPenalizado)
     {
         this.codPenalizacion = codPenalizacion;
         this.motivo = motivo;
