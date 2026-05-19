@@ -1,4 +1,4 @@
-public class Socios {
+public class Socio {
     private String dniSocio;
     private String tarjetaDeCredito;
     private String usuario;
@@ -8,20 +8,20 @@ public class Socios {
     private String telefono;
     private String contraseña;
     private String numeroSeguridadSocial;
-    private TipoDePenalizaciones codPenalizacion;
+    private TipoDePenalizacion codPenalizacion;
 
-     public Socios() {}
+     public Socio() {}
 
-     public Socios(String dniSocio, String nombreCompleto, String correoElectronico, String telefono) {
+     public Socio(String dniSocio, String nombreCompleto, String correoElectronico, String telefono) {
         this.dniSocio = dniSocio;
         this.nombreCompleto = nombreCompleto;
         this.correoElectronico = correoElectronico;
         this.telefono = telefono;
     }
 
-    public Socios(String dniSocio, String tarjetaDeCredito, String usuario, String correoElectronico,
+    public Socio(String dniSocio, String tarjetaDeCredito, String usuario, String correoElectronico,
                   String nombreCompleto, String fechaPenalizacion, String telefono, String contraseña,
-                  String numeroSeguridadSocial, TipoDePenalizaciones codPenalizacion) {
+                  String numeroSeguridadSocial, TipoDePenalizacion codPenalizacion) {
 
         this.dniSocio = dniSocio;
         this.tarjetaDeCredito = tarjetaDeCredito;
@@ -107,11 +107,11 @@ public class Socios {
         this.numeroSeguridadSocial = numeroSeguridadSocial;
     }
 
-    public TipoDePenalizaciones getCodPenalizacion() {
+    public TipoDePenalizacion getCodPenalizacion() {
         return codPenalizacion;
     }
 
-    public void setCodPenalizacion(TipoDePenalizaciones codPenalizacion) {
+    public void setCodPenalizacion(TipoDePenalizacion codPenalizacion) {
         this.codPenalizacion = codPenalizacion;
     }
 }
