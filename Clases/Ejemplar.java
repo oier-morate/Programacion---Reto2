@@ -1,11 +1,11 @@
-public class Ejemplares {
+public class Ejemplar {
     private int codEjemplar;
     private Libros codLibro;
     private String estadoDeDevolucion;
 
-    public Ejemplares(){}
+    public Ejemplar(){}
 
-    public Ejemplares(int codEjemplar, Libros codLibro, String estadoDeDevolucion)
+    public Ejemplar(int codEjemplar, Libros codLibro, String estadoDeDevolucion)
     {
         this.codEjemplar = codEjemplar;
         this.codLibro = codLibro;
