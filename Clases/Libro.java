@@ -1,12 +1,12 @@
-public class Libros {
+public class Libro {
     private int codLibro;
     private String nombre;
     private int numeroEjemplares;
     private String isbn;
 
-    public Libros() {}
+    public Libro() {}
 
-    public Libros(int codLibro, String nombre, int numeroEjemplares, String isbn)
+    public Libro(int codLibro, String nombre, int numeroEjemplares, String isbn)
     {
         this.codLibro = codLibro;
         this.nombre = nombre;
