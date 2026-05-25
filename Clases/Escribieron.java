@@ -29,4 +29,7 @@ public class Escribieron {
     {
         this.codAutor = codAutor;
     }
+    public String getResumen() {
+        return codAutor.getNombreCompleto() + " escribió \"" + codLibro.getNombre() + "\"";
+    }
 }
