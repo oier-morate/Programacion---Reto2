@@ -41,4 +41,8 @@ public class TipoDePenalizacion {
     {
         this.numeroDiasPenalizado = numerDiasPenalizado;
     }
+
+    public String getDescripcion() {
+        return "Penalización #" + this.codPenalizacion+ ": " + this.motivo + " (" + this.numeroDiasPenalizado + " días)";
+    }
 }
