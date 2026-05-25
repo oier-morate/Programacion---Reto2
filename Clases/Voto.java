@@ -36,4 +36,8 @@ public class Voto {
     public void setIdUsuario(int idLibro) {
         this.idLibro = idLibro;
     }
+
+    public boolean perteneceA(Usuario usuario) {
+        return this.idUsuario != null && usuario != null && this.idUsuario.getIdUsuario() == usuario.getIdUsuario();
+    }
 }
