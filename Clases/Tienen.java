@@ -29,4 +29,8 @@ public class Tiene {
     {
         this.codLibro = codLibro;
     }
+
+    public boolean perteneceAGenero(int codGenero) {
+        return this.codGenero != null && this.codGenero.getCodGenero() == codGenero;
+    }
 }
