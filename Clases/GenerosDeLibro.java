@@ -29,5 +29,8 @@ public class GenerosDeLibro {
     {
         this.nombreGenero = nombreGenero;
     }
-
+    
+    public boolean esGenero(String nombre) {
+        return this.nombreGenero != null && this.nombreGenero.equalsIgnoreCase(nombre);
+    }
 }
