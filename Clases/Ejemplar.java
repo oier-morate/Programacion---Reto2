@@ -42,4 +42,7 @@ public class Ejemplar {
         this.estadoDeDevolucion = estadoDeDevolucion;
     }
 
+    public boolean estaDisponible() {
+        return this.estadoDeDevolucion != null && this.estadoDeDevolucion.equalsIgnoreCase("disponible");
+    }
 }
