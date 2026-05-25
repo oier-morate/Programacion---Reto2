@@ -36,4 +36,8 @@ public class Usuario {
     public void setContrasena(String contrasena) {
         this.contrasena = contrasena;
     }
+
+    public boolean verificarContrasena(String intento) {
+        return this.contrasena != null && this.contrasena.equals(intento);
+    }
 }
