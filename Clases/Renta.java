@@ -66,4 +66,16 @@ public class Renta {
     {
         this.maxRenta = maxRenta;
     }
+
+    public boolean rentaVencida() {
+        // Compara fecha de devolución con la fecha límite (maxRenta días desde renta)
+        if (this.fechaDevolucion == null || this.fechaRenta == null)
+            return false;
+        String[] partsRenta = this.fechaRenta.split("/");
+        String[] partsDevolucion = this.fechaDevolucion.split("/");
+        int diaRenta  = Integer.parseInt(partsRenta[0]);
+        int diaDevolucion = Integer.parseInt(partsDevolucion[0]);
+        int diasTranscurridos = diaDevolucion - diaRenta; // simplificado
+        return diasTranscurridos > this.maxRenta;
+    }
 }
