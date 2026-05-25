@@ -102,4 +102,18 @@ public class Libro {
     public void setIdAutor(int idAutor){
         this.idAutor = idAutor;
     }
+
+    public boolean tieneEjemplaresDisponibles() {
+        return this.numeroEjemplares > 0;
+    }
+
+    public void reducirEjemplar() {
+        if (this.numeroEjemplares > 0) {
+            this.numeroEjemplares--;
+        }
+    }
+
+    public String getInfoCompleta() {
+        return "[" + this.isbn + "] " + this.nombre + " (" + this.numeroEjemplares + " ejemplares)";
+    }
 }
