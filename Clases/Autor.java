@@ -53,4 +53,8 @@ public class Autor {
     {
         this.apellidos = apellidos;
     }
+
+    public String getNombreCompleto() {
+        return this.nombre + " " + this.apellidos;
+    }
 }
