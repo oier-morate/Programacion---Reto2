@@ -114,4 +114,8 @@ public class Socio {
     public void setCodPenalizacion(TipoDePenalizacion codPenalizacion) {
         this.codPenalizacion = codPenalizacion;
     }
+
+    public boolean estaPenalizado() {
+        return this.codPenalizacion != null && this.fechaPenalizacion != null && !this.fechaPenalizacion.isEmpty();
+    }
 }
